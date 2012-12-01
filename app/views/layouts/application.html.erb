@@ -6,9 +6,16 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-<%= yield %>
-
-</body>
+<div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <a href="/" class="brand">Treebook</a>
+      </div>
+    </div>
+  </div>
+  <p class="notice"><%= notice %></p>
+     <p class="alert"><%= alert %></p>
+  <div class="container">
+    <%= yield %>
+  </div>
 </html>
